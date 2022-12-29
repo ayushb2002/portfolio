@@ -7,10 +7,17 @@
     <title>Portfolio | Ayush Bansal</title>
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/colors/color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Style switcher -->
+    <link rel="stylesheet" href="css/colors/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/colors/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/colors/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/colors/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/colors/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
 </head>
-<body>
+<body class="dark">
     <!-- Main Container Starts -->
     
     <div class="main-container">
@@ -23,25 +30,33 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i> About</a></li>
-                <li><a href="#"><i class="fa fa-list"></i> Journey</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i> Projects</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i> Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#journey"><i class="fa fa-list"></i> Journey</a></li>
+                <li><a href="#projects"><i class="fa fa-briefcase"></i> Projects</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
             </ul>
         </div>
         <!-- Aside ends -->
         <!-- Main content starts -->
         <div class="main-content">
             <!-- Home section starts -->
-            <div class="home section hidden">
+            <div class="home active section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
                             <h3 class="hello">Hello, my name is <span class="name">Ayush Bansal</span></h3>
-                            <h3 class="my-profession">I'm a <span class="typing">Software Engineer</span> in making ;)</h3>
-                            <p>I'm a full stack web developer, machine learning engineer, a blockchain developer and application developer with an experience of over 25 projects and many hackathons!</p>
-                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                            <h3 class="my-profession">I'm a <span class="typing">Software Engineer</span></h3>
+                            <p>I'm a full stack web developer, machine learning engineer, a blockchain developer and application developer with an experience of over 25 projects and many hackathons!
+                            </p>
+                            <a href="#" class="btn">Download CV</a>
+
+                            <p class="social-icons-holder">
+                                <a href="https://github.com/ayushb2002" target="_blank" class="social-icons"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/ayush-bansal-560597195/" target="_blank" class="social-icons"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://twitter.com/ayushb6732" target="_blank" class="social-icons"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="mailto:ayushb6732@gmail.com" target="_blank" class="social-icons"><i class="fa-regular fa-envelope"></i></a>    
+                            </p>
                         </div>
                         <div class="home-img padd-15">
                             <img src="img/hero.jpg" alt="ayushBansal">
@@ -51,7 +66,7 @@
             </div>
             <!-- Home section ends -->
             <!-- About section starts -->
-            <section class="about section hidden">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -95,8 +110,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="#" class="btn">Download CV</a>
-                                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -184,7 +198,7 @@
                             </div>
                             <div class="row">
                                 <div class="education padd-15">
-                                    <h3 class="title">Education</h3>
+                                    <h3 class="title"><b>Education</b></h3>
                                     <div class="row">
                                         <div class="timeline-box padd-15">
                                             <div class="timeline shadow-dark">
@@ -226,7 +240,7 @@
                                     </div>
                                 </div>
                                 <div class="experience padd-15">
-                                    <h3 class="title">Experience</h3>
+                                    <h3 class="title"><b>Experience</b></h3>
                                     <div class="row">
                                         <div class="timeline-box padd-15">
                                             <div class="timeline shadow-dark">
@@ -261,8 +275,8 @@
                 </div>
             </section>
             <!-- About section ends -->
-            <!-- SWOT section begins -->
-            <section class="service section">
+            <!-- Journey section begins -->
+            <section class="service section" id="journey">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -317,14 +331,361 @@
                     </div>
                 </div>
             </section>
-            <!-- SWOT section ends -->
+            <!-- Journey section ends -->
+            <!-- Projects section begins -->
+            <section class="portfolio section" id="projects">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Projects</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>My latest projects: </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- project item starts -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/projects/c.png" alt="c" >
+                                </div>
+                                <div class="portfolio-item-text">
+                                    <h3 class="portfolio-item-head">Blockchain server using C</h3>
+                                    <p>
+                                        Developed a project based on socket programming and Linux in C by creating an employee server for a bank and recording all the transactions in a self-made blockchain. <a href="https://github.com/ayushb2002/bankServer">View here!</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- project item ends -->
+                        <!-- project item starts -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/projects/python.png" alt="python" >
+                                </div>
+                                <div class="portfolio-item-text">
+                                    <h3 class="portfolio-item-head">VSkillUp</h3>
+                                    <p>
+                                        Developed a project in Python Django and Bootstrap 5 with integrated sentence transformer and grammar correction models from HuggingFace with the goal to provide a subjective method for learning English and increasing vocabulary. <a href="https://github.com/ayushb2002/minor1">View here!</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- project item ends -->
+                        <!-- project item starts -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/projects/blockchain.png" alt="blockchain" >
+                                </div>
+                                <div class="portfolio-item-text">
+                                    <h3 class="portfolio-item-head">WarrantyNFT</h3>
+                                    <p>
+                                        Developed a project based on minting and burning NFTs for products upon sale and expiry respectively. The project uses Brownie and Flask for server and React for client-side deployment. <a href="https://github.com/ayushb2002/flipgrid4">View here!</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- project item ends -->
+                        <!-- project item starts -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/projects/machine_learning.png" alt="machine-learning" >
+                                </div>
+                                <div class="portfolio-item-text">
+                                    <h3 class="portfolio-item-head">Dog breed classification</h3>
+                                    <p>
+                                        Developed a machine learning model using Transfer and Deep Learning which recognized dog breed from the given image of a dog. <a href="https://github.com/ayushb2002/Dog-Vision">View here!</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- project item ends -->
+                        <!-- project item starts -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/projects/php.png" alt="php" >
+                                </div>
+                                <div class="portfolio-item-text">
+                                    <h3 class="portfolio-item-head">Xenith'22</h3>
+                                    <p>
+                                        Designed and developed a website with a team for the college hackathon <b>Xenith'22</b> hosted by IEEE Student Branch. The website is live <a href="https://xenith22.live/">here!</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- project item ends -->
+                        <!-- project item starts -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/projects/python.png" alt="python" >
+                                </div>
+                                <div class="portfolio-item-text">
+                                    <h3 class="portfolio-item-head">AuSum</h3>
+                                    <p>
+                                        Developed an NLP model to summarize text and generate notes from text transcribed from an audio file using python libraries. <a href="https://github.com/ayushb2002/AuSum">View here!</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- project item ends -->
+                         <!-- project item starts -->
+                         <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/projects/web_development.png" alt="web-development" >
+                                </div>
+                                <div class="portfolio-item-text">
+                                    <h3 class="portfolio-item-head">ICABB'23</h3>
+                                    <p>
+                                        Designed and developed the official ICABB 2023 website for JIIT using Bootstrap 5 and Jquery. View official website <a href="https://icabb2023.com/">here!</a> 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- project item ends -->
+                        <!-- project item starts -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/projects/blockchain.png" alt="blockchain" >
+                                </div>
+                                <div class="portfolio-item-text">
+                                    <h3 class="portfolio-item-head">LandRegistryNFT</h3>
+                                    <p>
+                                        Developed a project based on NFT minting for a project based on digitalizing the land registry system and solving the loopholes in the Indian system with blockchain. <a href="https://github.com/ayushb2002/polygon-land-registry">View here!</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- project item ends -->
+                        <!-- project item starts -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/projects/php.png" alt="web-development" >
+                                </div>
+                                <div class="portfolio-item-text">
+                                    <h3 class="portfolio-item-head">ICSC'22</h3>
+                                    <p>
+                                        Designed and developed the official ICSC 2022 conference website for JIIT ECE Department using PHP and Bootstrap 3. View official website <a href="https://www.jiit.ac.in/jiit/ICSC/.">here!</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- project item ends -->
+                        <!-- project item starts -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/projects/react_native.png" alt="blockchain" >
+                                </div>
+                                <div class="portfolio-item-text">
+                                    <h3 class="portfolio-item-head">Green Fridge</h3>
+                                    <p>
+                                        Integrated the stale food classification model self trained using the ResNet50 model from TensorFlow Hub, to a mobile application developed on React-Native using Restful API for backend integration. <a href="https://github.com/ayushb2002/greenFridge">View here!</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- project item ends -->
+                        <!-- project item starts -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/projects/python.png" alt="python" >
+                                </div>
+                                <div class="portfolio-item-text">
+                                    <h3 class="portfolio-item-head">Django-Salesforce</h3>
+                                    <p>
+                                        Developed an application for integration of salesforce database to Django using <b>Django-salesforce</b> API and importing the database to python models. <a href="https://github.com/ayushb2002/clientellAPI">View here!</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- project item ends -->
+                        <!-- project item starts -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/projects/machine_learning.png" alt="machine-learning" >
+                                </div>
+                                <div class="portfolio-item-text">
+                                    <h3 class="portfolio-item-head">Indian Sign Language Model</h3>
+                                    <p>
+                                        Created an Indian sign language recognition model, a project based on Transfer Learning trained upon mobilenetv2 model. <a href="https://github.com/ayushb2002/ISL">View here!</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- project item ends -->
+                        <!-- project item starts -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/projects/php.png" alt="web-development" >
+                                </div>
+                                <div class="portfolio-item-text">
+                                    <h3 class="portfolio-item-head">RAMSA'22</h3>
+                                    <p>
+                                        Designed and developed the official RAMSA 2022 website for JIIT using PHP and Bootstrap 5. View official website <a href="https://www.jiit.ac.in/jiit/ramsa/.">here!</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- project item ends -->
+                        <!-- project item starts -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/projects/c.png" alt="c" >
+                                </div>
+                                <div class="portfolio-item-text">
+                                    <h3 class="portfolio-item-head">Walkman</h3>
+                                    <p>
+                                        A C++ application that provides a user-friendly menu driven command line to play music and create playlists and queues. <a href="https://github.com/ayushb2002/Walkman">View here!</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- project item ends -->
+                        <!-- project item starts -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="img/projects/php.png" alt="php" >
+                                </div>
+                                <div class="portfolio-item-text">
+                                    <h3 class="portfolio-item-head">CBI Employee Server</h3>
+                                    <p>
+                                        A website built using PHP and SQL as a secure database management system for security agencies. <a href="https://github.com/ayushb2002/CBI">View here!</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- project item ends -->
+                    </div>
+                </div>
+            </section>
+            <!-- Projects section ends -->
+            <!-- Contact section begins -->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">Have queries regarding something?</h3>
+                    <h4 class="contact-sub-title padd-15">AT YOUR SERVICE!</h4>
+                    <div class="row">
+                        <!-- Contact info item starts -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Call me</h4>
+                            <p>+91 8368274303</p>
+                        </div>
+                        <!-- Contact info item ends -->
+                        <!-- Contact info item starts -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                            <h4>City</h4>
+                            <p>New Delhi, India</p>
+                        </div>
+                        <!-- Contact info item ends -->
+                        <!-- Contact info item starts -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>Email</h4>
+                            <p>ayushb6732@gmail.com</p>
+                        </div>
+                        <!-- Contact info item ends -->
+                        <!-- Contact info item starts -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                            <h4>Website</h4>
+                            <p>www.ayushbansal.nft</p>
+                        </div>
+                        <!-- Contact info item ends -->
+                    </div>
+                    <h3 class="contact-title padd-15">Send queries here</h3>
+                    <h4 class="contact-sub-title padd-15">I'LL REPLY ASAP!</h4>
+                    <!-- Contact form begins -->
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="" placeholder="Message" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group" style="width: 100%;display:flex;justify-content:center;align-items:center">
+                                        <button class="btn" type="submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact form ends -->
+                </div>
+            </section>
+            <!-- Contact section ends -->
         </div>
         <!-- Main content ends -->
     </div>
     
     <!-- Main Container Ends -->    
-
+    <!-- Style Switcher Starts -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggle s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas"></i>
+        </div>
+        <h4>Theme color </h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyles('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyles('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyles('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyles('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyles('color-5')"></span>
+        </div>
+    </div>
+    <!-- Style Switcher Endss -->
     <!-- JS Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="js/main.js"></script>
+    <script src="js/style-switcher.js"></script>
 </body>
 </html>
