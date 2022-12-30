@@ -643,6 +643,7 @@ h3.my-profession{
     padding: 30px 15px;
     text-align: center;
     transition: all 0.3s ease;
+    min-height: 50vh;
 }
 
 .service .service-item .service-item-inner:hover{
